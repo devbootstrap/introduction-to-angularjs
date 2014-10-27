@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Introduction to Angular JS</title>
+
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <!-- uncomment to have the styles affect the app based on angular state -->
+  <!-- <link rel="stylesheet" href="css/app.css" /> -->
+</head>
+<body>
+
+<ul>
+  <li><a href="#/">Home</a></li>
+  <li><a href="#/settings">Settings</a></li>
+</ul>
+
+<div ng-view></div>
+
+<script src="js/vendor/angular.js"></script>
+<script src="js/vendor/angular-route.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

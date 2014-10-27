@@ -1,0 +1,38 @@
+<div class="row">
+  <h1>Update your Settings</h1>
+  <form name="form">
+    <fieldset>
+      <legend>Update settings</legend>
+
+      <div class="row">
+        <div class="small-8 columns">
+          <label>Name</label>
+          <input type="text" placeholder="Name" name="name" ng-model="settings.name" ng-minlength=3 ng-maxlength=20 ng-pattern="/^[a-zA-Z]+$/" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-8 columns">
+          <label>Email</label>
+          <!-- setting type='email' in an angular app automatically validates email -->
+          <input type="email" placeholder="Email" name="email" ng-model="settings.email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-8 columns">
+          <label>Age</label>
+          <!-- setting type='number' in an angular app automatically validates email -->
+          <input type="number" placeholder="Age" name="age" ng-model="settings.age">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-8 columns">
+          <button type="submit" class="button">Update</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+{{settings}}
